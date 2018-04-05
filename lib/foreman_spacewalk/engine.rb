@@ -15,7 +15,7 @@ module ForemanSpacewalk
 
     initializer 'foreman_spacewalk.register_plugin', before: :finisher_hook do |_app|
       Foreman::Plugin.register :foreman_spacewalk do
-        requires_foreman '>= 1.15'
+        requires_foreman '>= 1.17'
 
         spacewalk_proxy_options = {
           feature: 'Spacewalk',
