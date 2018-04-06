@@ -29,9 +29,8 @@ module ForemanSpacewalk
       test 'show a host selection' do
         host_ids = hosts.map(&:id)
         post :select_multiple_spacewalk_proxy,
-             params: { host_ids: host_ids },
-             session: set_session_user,
-             xhr: true
+             { host_ids: host_ids },
+             set_session_user
         assert_response :success
         hosts.each do |host|
           assert response.body =~ /#{host.name}/m
@@ -48,12 +47,12 @@ module ForemanSpacewalk
           proxy: { proxy_id: spacewalk_proxy.id }
         }
 
-        post :update_multiple_spacewalk_proxy, params: params, session: set_session_user
+        post :update_multiple_spacewalk_proxy, params, set_session_user
 
         assert_response :found
         assert_redirected_to hosts_path
         assert_nil flash[:error]
-        assert_equal "The Spacewalk proxy of the selected hosts was set to #{spacewalk_proxy.name}", flash[:notice]
+        assert_includes "The Spacewalk proxy of the selected hosts was set to #{spacewalk_proxy.name}.", flash[:notice]
 
         hosts.each do |host|
           as_admin do
