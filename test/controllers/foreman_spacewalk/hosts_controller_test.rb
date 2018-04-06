@@ -52,8 +52,8 @@ module ForemanSpacewalk
 
         assert_response :found
         assert_redirected_to hosts_path
-        assert_nil flash[:error]
-        assert_equal "The Spacewalk proxy of the selected hosts was set to #{spacewalk_proxy.name}", flash[:notice]
+        assert_nil flash['error']
+        assert_equal "The Spacewalk proxy of the selected hosts was set to #{spacewalk_proxy.name}", flash['success']
 
         hosts.each do |host|
           as_admin do
