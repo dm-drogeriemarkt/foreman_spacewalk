@@ -7,7 +7,8 @@ Spacewalk is an open source server management tool and downstream for RedHat Sat
 
 | Foreman Version | Plugin Version |
 | --------------- | -------------- |
-| >= 1.15         | any            |
+| >= 1.15         | ~> 0.1         |
+| >= 1.17         | ~> 1.0         |
 
 ## Installation
 
