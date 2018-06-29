@@ -27,3 +27,4 @@ env:
     - FOREMAN_PLUGIN_NAME=foreman_spacewalk
   matrix:
     - FOREMAN_CORE_BRANCH=1.17-stable
+    - FOREMAN_CORE_BRANCH=1.18-stable
