@@ -1,5 +1,7 @@
 # ForemanSpacewalk
 
+[<img src="https://opensourcelogos.aws.dmtech.cloud/dmTECH_opensource_logo%401x.svg" height="21" width="130">](https://www.dmtech.de/)
+
 This is a plugin for [Foreman](https://github.com/theforeman/foreman) that allows to clean up hosts in a Spacewalk installation when they are removed in Foreman.
 Spacewalk is an open source server management tool and downstream for RedHat Satellite 5 and SUSE Manager.
 
@@ -38,7 +40,7 @@ Fork and send a Pull Request. Thanks!
 
 ## Copyright
 
-Copyright (c) 2018 dm-drogerie markt GmbH & Co. KG, https://dm.de
+Copyright (c) 2018 dmTECH GmbH, [dmtech.de](https://www.dmtech.de/)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
