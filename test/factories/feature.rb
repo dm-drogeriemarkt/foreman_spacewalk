@@ -1,7 +1,7 @@
 FactoryBot.modify do
   factory :feature do
     trait :spacewalk do
-      name 'Spacewalk'
+      name { 'Spacewalk' }
     end
   end
 end
