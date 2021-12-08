@@ -1,3 +1,6 @@
+:warning: | This repository is not being maintained anymore.
+:---: | :---
+
 # ForemanSpacewalk
 
 [<img src="https://opensourcelogos.aws.dmtech.cloud/dmTECH_opensource_logo%401x.svg" height="21" width="130">](https://www.dmtech.de/)
